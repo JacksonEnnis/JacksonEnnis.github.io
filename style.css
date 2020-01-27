@@ -15,7 +15,7 @@ body{
 
 .commandline, .commandbox{
   background:black;
-  width:75%;
+  width:90%;
   resize:none;
   outline:none;
   color:#26ff00;
@@ -45,6 +45,10 @@ h1, h2, h3, p1{
   color:#26ff00;
 }
 
+.flicker{
+  animation: blinker 1s linear infinite;
+}
+
 img{
   display: block;
   margin: 0 auto;
@@ -52,4 +56,11 @@ img{
 
 .removable{
   overflow: hidden;
+}
+
+
+@keyframes blinker {
+  25% {
+    opacity: 0;
+  }
 }

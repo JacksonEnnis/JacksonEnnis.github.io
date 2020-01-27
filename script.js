@@ -8,6 +8,7 @@ let align = ['left', 'center', 'right'];
 
 
 function addToSS(directory){
+  colors = ['#00ff00', '#ff0000', '#00ccff','#ffff00', '#ff00ff','#6666ff','#ffffff'];
   fetch(directory)
     .then((response) => {
       return response.text();
@@ -15,6 +16,8 @@ function addToSS(directory){
     .then((txt) => {
       var k = txt;
       var text = document.createElement("p1");
+      text.style.color = colors[getRandomInt(colors.length)];
+      
       text.classList.add("temporary");
       text.innerHTML = txt;
       text.style.cssFloat = align[getRandomInt(3)];
@@ -25,6 +28,15 @@ function addToSS(directory){
 
 function getRandomInt(max){
   return Math.floor(Math.random() * Math.floor(max));
+}
+
+function gnl(node){
+  items = []
+  for(let child of node.nodes){
+    items.push(child.identity)
+  }
+  console.log(items)
+  return items
 }
 
 class Node {
@@ -104,7 +116,7 @@ class terminalManger{
       counter += 1;
     }
     for(let item of node.data){
-      this.history.push(counter + ") " + item);
+      this.addMessage(counter + ") " + item);
       counter += 1;
     }
     this.print();
@@ -136,7 +148,22 @@ base.linkTo("BASE", AboutMe);
 base.linkTo("BASE", PassionProjects);
 base.linkTo("BASE", WorkExperience);
 
+tm.addMessage("Welcome to my website!");
+tm.addMessage("Type 'help' to learn what commands you can use.");
 
+
+
+
+
+window.setTimeout(function(){
+  var element = document.getElementById("commandbox");
+  element.classList.remove("flicker");
+  
+  document.getElementById("commandline").style.display = "block";
+}, 3000);
+
+document.getElementById("commandline").style.display = "none";
+document.getElementById("commandline").defaultValue = "help";
 tm.addNodeMessages(base);
 
 let records = [];
@@ -152,7 +179,7 @@ cl.addEventListener("keyup", function(event) {
       if(command.includes("'")){
         tm.addMessage("Noooo! Try the command without the quotations!");
       }
-      else if(command.includes("nav")){
+      else if(command.includes("nav") && gnl(base).includes(command.split(" ")[1])){
         records.push(base);
         base = base.goTo(command.split(" ")[1]);
         console.log(base.identity);
