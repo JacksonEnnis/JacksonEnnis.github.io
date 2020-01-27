@@ -1,0 +1,1 @@
+I made this website from almost purely vanilla Javascript, HTML, CSS. What you're seeing is what I designed. When I do this over again, I'll definitely use Node.js - I've learned that that's a far better way of doing things. I consider this project more of a project in getting better at writing in javascript, then anything else.

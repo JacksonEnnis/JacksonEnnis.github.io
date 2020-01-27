@@ -1,0 +1,1 @@
+This project is actually several smaller projects combined into one. You can query a stock, run a battery of stocks, and lauch a twitterbot that will respond to users who message it with the user inputted stock prediction. I thought it was a clever way to have a user interface for other people without having to go to the effort of building one.

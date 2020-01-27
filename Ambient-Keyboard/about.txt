@@ -1,0 +1,3 @@
+Basically, this is a python script that plays ambient music and assigns keyboard noises to each keystroke. My favorite package on the program is the Minecraft package. Let the calming sounds of minecraft take you away.
+
+I encourage you to try this program out!

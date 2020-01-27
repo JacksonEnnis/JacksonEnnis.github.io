@@ -1,0 +1,1 @@
+In my opinion, this is my most prestigious project. Basically, its a terminal that you can use to predict whether a stock is going to increase by 1%, 0% or is going to decrease. With it you can query any stock to get predictions.

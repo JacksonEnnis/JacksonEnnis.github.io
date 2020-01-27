@@ -1,0 +1,1 @@
+The app acts like a dead man's trigger. First, at a safe location, activate the app. The app will then wait for user input, and if there is no input within the selected timeframe, the app goes off, silently sending messages to your contacts that you're in trouble along with your GPS location.

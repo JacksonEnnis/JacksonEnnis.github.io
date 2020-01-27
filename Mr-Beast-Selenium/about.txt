@@ -1,0 +1,3 @@
+This was a small project I made just in time for Mr. Beast's Million Dollar Competition. For those of you out of the loop, Mr. Beast, an online philanthropist, held a competition where the winner would win 1,000,000 smackers. BUT, in the comments for the video, the first 10 people to comment would get 1000 dollars.
+
+So, naturally, I tried to automate it so I could be first.
