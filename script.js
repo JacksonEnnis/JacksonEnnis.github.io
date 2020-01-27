@@ -136,7 +136,7 @@ let PassionProjects = new Node("Passion-Projects", [
 
 let AboutMe = new Node("About-Me", [
 
-], ['about.txt','animal-behavior.txt','cs.txt','intel.txt']);
+], ['about.txt','animal-behavior.txt','cs.txt','intel.txt', 'family.png','vacation.jpg']);
 
 let WorkExperience = new Node("Work-Experience", [
   new Node("Technical-Experience", [], ["Genesys.txt"]),
